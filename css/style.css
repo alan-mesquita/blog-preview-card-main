@@ -1,0 +1,93 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --webkit-font-smothing: antialiased;
+  --moz-osx-font-smothing: grayscale;
+}
+
+:root {
+  /* Colors Primary*/
+
+  --yellow: hsl(47, 88%, 63%);
+
+  /* Colors Neutral*/
+
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+span, h1, p {
+  line-height: 150%;
+}
+
+body {
+  background-color: var(--yellow);
+  font-family: "Figtree", sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--black);
+  box-shadow: 8px 8px var(--black);
+  width: min(327px, 90%);
+  
+  display: grid;
+  gap: 24px;
+}
+
+.cover {
+  width: 100%;
+}
+
+.content {
+  display: grid;
+  gap: 12px;  
+}
+
+.content > .tag {
+  background-color: var(--yellow);
+  border-radius: 4px;
+  color: var(--black);
+  font-weight: 800;
+  font-size: 12px;
+  width: max-content;
+  padding: 4px 12px;
+}
+
+.content > .date {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.content > .title {
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.content > .title:hover {
+  color:  var(--yellow);
+}
+
+.content > .text {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.author {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.author > p {
+  font-size: 14px;
+  font-weight: 800;
+}
